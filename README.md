@@ -39,10 +39,10 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 ## 控制台選單
 ### 控制台
 1. 清除控制台紀錄
-* clear
+>>> clear
 ### 世界
 1. 生成世界 
-* world spawn [世界ID] 
+>>> world spawn [世界ID] 
 ### 音源
 1. 調整音樂音量 音量介於 0 - 1 之間
 * audio music [音量] 
