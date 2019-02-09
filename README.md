@@ -11,6 +11,11 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 * 插件支援
 
 ## 版本更新資訊
+### 版本 0.6
+* 加入幫助指令
+* 加入指令執行元件
+* 加入指令集執行元件
+* 加入指令權限
 ### 版本 0.5
 * 加入控制台滑動事件
 * 加入角色控制器管理
@@ -48,14 +53,45 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 ### 控制台
 * 清除控制台紀錄
 >>> clear
+* 查詢目前權限
+>>> permission
+* 開啟管理員
+>>> admin [0 or 1]
 * 查詢指令
 >>> help
+* 查詢核心指令
+>>> help core
+* 查詢插件指令
+>>> help plugin
+* 查詢世界指令
+>>> help world
+* 查詢音源指令
+>>> help audio
+* 查詢實體指令
+>>> help entity
+* 查詢玩家指令
+>>> help player
+* 查詢角色指令
+>>> help character
+### 插件
+* 查看插件選單
+>>> plugin list
 ### 世界
+* 查看世界預設角色
+>>> world default [角色ID]
+* 查看世界清單
+>>> world list
 * 生成世界 
 >>> world spawn [世界ID] 
+* 世界重生點
+>>> world respawn [x] [y] [z]
 * 刪除世界
 >>> world clear
 ### 音源
+* 音樂列表
+>>> audio music list
+* 音效列表
+>>> audio sfx list
 * 調整音樂音量 音量介於 0 - 1 之間
 >>> audio music [音量] 
 * 播放音樂
@@ -73,6 +109,8 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 >>> entity spawn [實體物件] 
 * 生成實體物件到指定位置
 >>> entity spawn [實體物件] [x] [y] [z] 
+* 刪除所有實體物件
+>>> entity clear
 ### 玩家
 * 生成玩家
 >>> spawn player [x] [y] [z] 
