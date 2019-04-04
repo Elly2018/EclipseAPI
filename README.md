@@ -11,6 +11,11 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 * 插件支援
 
 ## 版本更新資訊
+### 版本 0.9
+* 音效腳本修改
+* 加入混音器控制
+* 加入遊戲內 Debug 視窗
+* Debug 訊息系統修正
 ### 版本 0.7
 * 加入雙語介面至其他元件
 * 加入重力控制
@@ -81,56 +86,3 @@ Unity3D 使用的流程控制腳本, 能使在製作 Unity 遊戲時更簡單控
 >>> help player
 * 查詢角色指令
 >>> help character
-### 插件
-* 查看插件選單
->>> plugin list
-### 世界
-* 查看世界預設角色
->>> world default [角色ID]
-* 查看世界清單
->>> world list
-* 生成世界 
->>> world spawn [世界ID] 
-* 世界重生點
->>> world respawn [x] [y] [z]
-* 刪除世界
->>> world clear
-* 天空列表
->>> world sky list
-* 設定天空
->>> world sky set [天空ID]
-* 設定三維重力
->>> gravity [x] [y] [z]
-* 設定一維重力
->>> gravity [y]
-### 音源
-* 音樂列表
->>> audio music list
-* 音效列表
->>> audio sfx list
-* 調整音樂音量 音量介於 0 - 1 之間
->>> audio music [音量] 
-* 播放音樂
->>> audio music play [音樂ID] 
-* 停止所有音樂
->>> audio music stop
-* 調整音效音量 音量介於 0 - 1 之間
->>> audio sfx [音量] 
-* 生成音效 但是是全場都聽得見的 2D 音效
->>> audio sfx play [音效ID] 
-* 生成音效到指定位置 3D 音效
->>> audio sfx play [音效ID] [x] [y] [z] 
-### 實體
-* 生成實體物件到玩家面前
->>> entity spawn [實體物件] 
-* 生成實體物件到指定位置
->>> entity spawn [實體物件] [x] [y] [z] 
-* 刪除所有實體物件
->>> entity clear
-### 玩家
-* 飛行幽靈模式
->>> noclip
-* 生成玩家
->>> spawn player [x] [y] [z] 
-* 傳送玩家
->>> teleport [x] [y] [z] 
